@@ -3,7 +3,6 @@
 This is a description of a display for showing values of an 8-bit signal. This is useful
 for building and debugging breadboard digital circuits working with digital numbers.
 
-
 ![Picture of module](docs/pictures/module.jpg)
 
 It's main features are:
@@ -17,6 +16,9 @@ It's main features are:
 It's inspired in [Ben Eater's output register](https://eater.net/8bit/output), but this
 is **just the display** (it does not contain register functionality). I decided to keep
 it as a separate unit that I can attach to any register to debug.
+
+[🎥 Video Demo](https://youtube.com/shorts/chPcDeSRnCQ?feature=share)
+
 
 ## Building the display
 
@@ -77,4 +79,3 @@ If you set an invalid mode, the display should show `----` (four dashes).
   ROM, but using a breadboard ends up being a bit tight to do this
 * I'm exploring a version where I replace the 112+139 for a single PLA (ATF16V8); that
   would provide a bit of extra physical space for other improvements.
-  

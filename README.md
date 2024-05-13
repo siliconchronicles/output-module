@@ -68,3 +68,13 @@ selected mode. `shuffle()` takes care of adjusting the bits described in the fon
 output pin layout selected.
 
 If you set an invalid mode, the display should show `----` (four dashes).
+
+## Possible improvements
+
+* Having one resistor per digit makes the current fixed per digit, which results in symbols
+  with many segments (like the digit 8) dimmer than symbols with less segments (like the
+  digit 1). It would be better to have resistors in each one of the output lines from the
+  ROM, but using a breadboard ends up being a bit tight to do this
+* I'm exploring a version where I replace the 112+139 for a single PLA (ATF16V8); that
+  would provide a bit of extra physical space for other improvements.
+  

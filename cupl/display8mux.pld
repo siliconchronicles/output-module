@@ -1,0 +1,26 @@
+Name     display8mux ;
+PartNo   00 ;
+Date     06/Jun/2024 ;
+Revision 01 ;
+Designer Daniel F. Moisset ;
+Company  Silicon Chronicles ;
+Assembly None ;
+Location  ;
+Device   g16v8a;
+
+/* INPUT */
+PIN 1 = clk ;
+
+/* OUTPUTS */
+PIN [12..15] = ! [sel0..3] ;
+PIN [18..19] = [a0..1] ;
+
+/* A.d = A + 1 */
+a0.d = !a0 ;
+a1.d = a1 $ a0 ;
+
+sel0 = [a1..0]:0 ;
+sel1 = [a1..0]:1 ;
+sel2 = [a1..0]:2 ;
+sel3 = [a1..0]:3 ;
+

@@ -1,0 +1,18 @@
+Name     display8mux ;
+PartNo   00 ;
+Date     06/Jun/2024 ;
+Revision 01 ;
+Designer Daniel F. Moisset ;
+Company  Silicon Chronicles ;
+Assembly None ;
+Location  ;
+Device   g16v8a;
+
+ORDER: clk, %2, a1..0, %2, sel0..3;
+
+VECTORS:
+C LL HLLL
+C LH LHLL
+C HL LLHL
+C HH LLLH
+C LL HLLL

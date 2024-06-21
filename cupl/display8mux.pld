@@ -12,8 +12,8 @@ Device   g16v8a;
 PIN 1 = clk ;
 
 /* OUTPUTS */
-PIN [12..15] = ! [sel0..3] ;
-PIN [18..19] = [a0..1] ;
+PIN [15..12] = ! [sel0..3] ;
+PIN [18..17] = [a0..1] ;
 
 /* A.d = A + 1 */
 a0.d = !a0 ;

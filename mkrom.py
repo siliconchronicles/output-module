@@ -43,10 +43,10 @@ def shuffle(value: int, ordering: str = Config.ROM_LAYOUT) -> int:
 
 
 class Mode(Enum):
-    UNSIGNED_DECIMAL = 0
-    SIGNED_DECIMAL = 1
-    HEX = 2
-    SIGNED_HEX = 3
+    HEX = 0
+    UNSIGNED_DECIMAL = 1
+    SIGNED_HEX = 2
+    SIGNED_DECIMAL = 3
 
 
 def generate_text(value: int, mode: Mode) -> str:
